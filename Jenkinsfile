@@ -22,9 +22,9 @@ pipeline{
             }
         }
         
-       /* stage("Static-code-analysis"){
+        stage("Static-code-analysis"){
             environment{
-                    SONARQUBE_URL = "http://13.126.92.118:9000"
+                    SONARQUBE_URL = "http://13.232.177.120:9000"
                 }
                 steps{
                     withCredentials([string(credentialsId: 'sonarqube', variable: 'SONAR_AUTHENTICATION_TOKEN')]) {
@@ -33,7 +33,7 @@ pipeline{
                     -Dsonar.host.url=${SONARQUBE_URL}'''
                 }
                 }
-        }*/
+        }
         
         stage("Build-Docker-Image"){
             environment{
