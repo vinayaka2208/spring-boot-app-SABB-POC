@@ -3,9 +3,9 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 
 MAINTAINER VINAYAKA
 
-COPY
+COPY  /target/spring-boot-web.jar
 
 EXPOSE 8085
 
-ENTRYPOINT ["java","-jar".""]
+ENTRYPOINT ["java","-jar"."spring-boot-web.jar"]
 
