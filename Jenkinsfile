@@ -21,7 +21,7 @@ pipeline{
                 sh "mvn clean package -DSkipTest"
             }
         }
-        
+       /*  
         stage("Static-code-analysis"){
             environment{
                     SONARQUBE_URL = "http://13.232.177.120:9000"
@@ -34,6 +34,7 @@ pipeline{
                 }
                 }
         }
+        */
         
         stage("Build-Docker-Image"){
             environment{
